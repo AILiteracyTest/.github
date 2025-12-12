@@ -1,12 +1,8 @@
-## Hi there 👋
+# AI 리터러시 테스트
 
-<!--
+## 📝 프로젝트 소개
+- 디지털 취약 계층의 AI 리터러시 능력을 향상시키기 위한 교육형 퀴즈 웹 서비스   
+- 실제 이미지 vs AI 이미지 퀴즈를 통해  AI 리터러시 향상을 도모
 
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 프로젝트 폴더 설명
+### 프론트엔드
