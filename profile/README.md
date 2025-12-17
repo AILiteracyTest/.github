@@ -43,9 +43,9 @@ https://ai-literacy-test.netlify.app/
 ```js
 Backend
  ┣ db_folder
- ┃ ┣ fake 
- ┃ ┣ real 
- ┃ ┗ text
+ ┃ ┣ fake //AI 이미지 저장 폴더
+ ┃ ┣ real //Natural 이미지 저장 폴더
+ ┃ ┗ text //AI 이유 텍스트 저장 폴더
  ┣ unet_autoencoder
  ┃ ┣ models
  ┃ ┃ ┗ model20.pth
@@ -58,9 +58,9 @@ Backend
  ┃ ┣ test.py
  ┃ ┣ train.py
  ┃ ┗ unet.py
- ┣ app.py
- ┣ render.yaml
- ┣ requirements.txt
+ ┣ app.py //이미지 생성·분석 및 점수 관리 백엔드
+ ┣ render.yaml //Render 배포 환경 설정 파일
+ ┣ requirements.txt //백엔드 실행을 위한 파이썬 의존성 목록
  ┣ runtime.txt
- ┗ scores.db
+ ┗ scores.db //사용자 점수 저장 데이터베이스
 ```
