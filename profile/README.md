@@ -36,3 +36,31 @@ https://ai-literacy-test.netlify.app/
 ```
 #### 실행 방법
 `npm install` 후 `npm run dev` 혹은 배포 링크를 통해 확인 가능
+
+### Backend
+[Backend Repository](https://github.com/AILiteracyTest/Backend)
+
+```js
+Backend
+ ┣ db_folder
+ ┃ ┣ fake 
+ ┃ ┣ real 
+ ┃ ┗ text
+ ┣ unet_autoencoder
+ ┃ ┣ models
+ ┃ ┃ ┗ model20.pth
+ ┃ ┣ ae_core.py
+ ┃ ┣ ae_explain.py
+ ┃ ┣ config.py
+ ┃ ┣ datasets_ae.py
+ ┃ ┣ laion.py
+ ┃ ┣ score_folder.py
+ ┃ ┣ test.py
+ ┃ ┣ train.py
+ ┃ ┗ unet.py
+ ┣ app.py
+ ┣ render.yaml
+ ┣ requirements.txt
+ ┣ runtime.txt
+ ┗ scores.db
+```
