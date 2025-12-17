@@ -34,8 +34,7 @@ https://ai-literacy-test.netlify.app/
  ┣ 📜index.css
  ┗ 📜main.tsx
 ```
-#### 실행 방법
-`npm install` 후 `npm run dev` 혹은 배포 링크를 통해 확인 가능
+
 
 ### Backend
 [Backend Repository](https://github.com/AILiteracyTest/Backend)
@@ -64,3 +63,7 @@ Backend
  ┣ runtime.txt
  ┗ scores.db //사용자 점수 저장 데이터베이스
 ```
+
+
+#### 실행 방법
+`npm install` 후 `npm run dev` 혹은 배포 링크를 통해 확인 가능
