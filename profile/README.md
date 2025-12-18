@@ -38,29 +38,28 @@ https://ai-literacy-test.netlify.app/
 
 ### Backend
 [Backend Repository](https://github.com/AILiteracyTest/Backend)
-
 ```js
- ┣ 📂db_folder // 판별 문제용 이미지 및 설명 데이터
- ┃ ┣ 📂fake //AI 생성(Synthetic) 이미지 저장 폴더
- ┃ ┣ 📂real //실제(Natural) 이미지 저장 폴더
- ┃ ┗ 📂text //AI로 생성된 이유 텍스트 저장 폴더
- ┣ 📂unet_autoencoder // AI 생성 이미지 판별 및 설명 모듈
- ┃ ┣ 📂models // 학습된 모델 가중치(.pth) 저장
- ┃ ┃ ┗ 📜model20.pth
- ┃ ┣ 📜ae_core.py // 재구성 오차 계산 및 heatmap/overlay 시각화
- ┃ ┣ 📜ae_explain.py // 재구성 오차를 근거로 한 자연어 설명 생성 
- ┃ ┣ 📜config.py // 경로 및 하이퍼파라미터 설정
- ┃ ┣ 📜datasets_ae.py // 모델 학습·추론용 데이터셋 정의
- ┃ ┣ 📜laion.py // LAION 학습 데이터셋 생성 스크립트
- ┃ ┣ 📜score_folder.py // 재구성 오차(mean, p95) 통계 점수 계산 로직
- ┃ ┣ 📜test.py // 단일 이미지에 대한 추론 테스트 스크립트
- ┃ ┣ 📜train.py // U-Net Autoencoder 학습 스크립트
- ┃ ┗ 📜unet.py // U-Net 기반 Autoencoder 모델 정의
- ┣ 📜app.py //이미지 생성·분석 및 점수 관리 백엔드
- ┣ 📜render.yaml //Render 배포 환경 설정 파일
- ┣ 📜requirements.txt //백엔드 실행을 위한 파이썬 의존성 목록
- ┣ 📜runtime.txt // Render Python 런타임 버전 명시
- ┗ 📜scores.db //사용자 점수 저장 데이터베이스
+ ┣ 📂db_folder                 // 판별 문제용 이미지 및 설명 데이터
+ ┃ ┣ 📂fake                    // AI 생성(Synthetic) 이미지
+ ┃ ┣ 📂real                    // 실제(Natural) 이미지
+ ┃ ┗ 📂text                    // AI 생성 판단 이유 텍스트
+ ┣ 📂unet_autoencoder          // AI 생성 이미지 판별 및 설명 모듈
+ ┃ ┣ 📂models                  // 학습된 모델 가중치(.pth)
+ ┃ ┃ ┗ model20.pth
+ ┃ ┣ ae_core.py                // 재구성 오차 계산 및 heatmap/overlay 시각화
+ ┃ ┣ ae_explain.py             // 재구성 오차를 근거로 한 자연어 설명 생성
+ ┃ ┣ config.py                 // 경로 및 학습/추론 하이퍼파라미터 설정
+ ┃ ┣ datasets_ae.py            // Autoencoder 학습·추론용 데이터셋 정의
+ ┃ ┣ laion.py                  // LAION 기반 Autoencoder 학습 데이터셋 생성 스크립트
+ ┃ ┣ score_folder.py           // 재구성 오차(mean, p95) 통계 점수 계산 로직
+ ┃ ┣ test.py                   // Autoencoder 추론 테스트 스크립트
+ ┃ ┣ train.py                  // U-Net Autoencoder 학습 스크립트
+ ┃ ┗ unet.py                   // U-Net 기반 Autoencoder 모델 정의
+ ┣ app.py                      // 이미지 생성·판별·설명 및 점수 관리 백엔드 서버
+ ┣ render.yaml                 // Render 배포 환경 설정 파일
+ ┣ requirements.txt            // 백엔드 실행을 위한 Python 의존성 목록
+ ┣ runtime.txt                 // Render Python 런타임 버전 명시
+ ┗ scores.db                   // 사용자 점수 저장 데이터베이스
 ```
 
 
