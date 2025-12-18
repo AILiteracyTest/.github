@@ -64,5 +64,5 @@ https://ai-literacy-test.netlify.app/
 
 
 #### 실행 방법
-`npm install` 후 `npm run dev` 혹은 배포 링크를 통해 확인 가능
+`npm install` 후 `npm run dev` 혹은 배포 링크를 통해 확인 가능   
 서버가 켜지는 데에 시간이 조금 걸려 첫 실행은 2분 이상 걸릴 수도 있는 점 양해 부탁드립니다. 
